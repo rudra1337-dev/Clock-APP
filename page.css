@@ -1,0 +1,152 @@
+body{
+  background-color: #1C1C1C;
+  color: #FFD700;
+}
+
+i{
+  /*color: #1C1C1C;*/
+}
+
+header{
+}
+
+
+.clockBox{
+  display: flex;
+}
+
+.alaramBox{
+  display: none;
+}
+
+.stopWBox{
+  display: none;
+}
+
+.timerBox{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+#clock{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 13vh;
+  width: 93vw;
+  padding-left: 7vw;
+  
+}
+#alaram{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 93vw;
+  padding-left: 7vw;
+
+  
+  
+}
+#stopW{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 13vh;
+  width: 93vw;
+  padding-left: 7vw;
+}
+#timer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 13vh;
+  width: 93vw;
+  padding-left: 7vw;
+}
+.themChanger{
+  color: black;
+  height: 12vh;
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.darkMod{
+  color: #F5F5F5;
+  font-size: 8vw;
+}
+
+.whiteMod{
+  color: #1C1C1C;
+  font-size: 8vw;
+}
+.hed{
+  font-weight: bolder;
+  font-size: 10vw;
+}
+
+
+
+
+
+footer{
+  background-color: #1C1C1C;
+  border-top: 1px solid dimgrey;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 0vh;
+  z-index: 5;
+}
+
+footer  div{
+  height: 10vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  color: dimgrey;
+  z-index: 5;
+} 
+footer  p{
+  font-size: 3vw;
+  font-weight: bolder;
+  z-index: 5;
+}
+footer  i{
+  font-size: 6vw;
+  padding-top: 5px;
+  margin-top: 10px;
+  z-index: 5;
+}
+
+
+section{
+  height: 74vh;
+}
+
+
+
+
+
+
+
+#Clock{
+  color: lightskyblue;
+}
+

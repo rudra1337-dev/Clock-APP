@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+#inSw{
+  display: flex;
+    justify-content: center;
+  align-items: center;
+    height: 23vh;
+  width: 100vw;
+    /*background-color: azure;*/
+  font-size: 15vw;
+}
+
+
+.swIn{
+  width: 25vw;
+  text-align: center;
+  font-size: 20vw;
+  border-radius: 30%;
+  background-color: #1C1C1C;
+  color: #FFD700;
+  border: 2px dotted #FFD700;
+}
+
+
+
+
+
+#swAdd{
+  background-color: lightskyblue;
+  height: 15vw;
+  width: 15vw;
+  border: none;
+  border-radius: 50%;
+  z-index: 2;
+  font-size: 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.playFunc{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  width: 80VW;
+  border-radius: 10%;
+  border: 1px solid wheat;
+  
+}
+
+.swFunctions button{
+  background-color: #1C1C1C;
+  color: #FFD700;
+  
+  height: 12vw;
+  width: 12vw;
+  border: 1px solid #FFD700;
+  border-radius: 50%;
+  font-size: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#swCross{
+  /*color: red;*/
+  /*border-color: red;*/
+}
+
+#swFunctions{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  width: 80VW;
+  border-radius: 10%;
+  
+  position: fixed;
+  bottom: 14vh;
+  left: 9.5vw;
+  z-index: 2;
+}
+
+#swReset, #swMark{
+  height: 15vw;
+  width: 15vw;
+  border: none;
+  border-radius: 50%;
+  font-size: 7vw;
+   color: darkgray;
+  background-color: #1C1C1C;
+  display: none;
+}
+
+
+
+
+
+
+
+
+/*-----------__----------------_-------------*/
+
+
+
+
+.stLables{
+  /*background-color: lightpink;*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+  width: 95vw;
+  
+  display: none;
+}
+#dynamicUpdate{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 51vh;
+  width: 100vw;
+  /*background-color: lightblue;*/
+}
+
+
+.stLableTime{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: ;
+  height: 6vh;
+  width: 20vw;
+    
+  /*background-color: red;*/
+}
+
+.stDifferTime{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: ;
+  height: 6vh;
+  width: 20vw;
+  
+    
+  /*background-color: blue;*/
+}
+
+
+.stSlNo{
+  /*background-color: aquamarine;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  width: 15vw;
+}
+
+.stSlNo i{
+  font-size: 5vh;
+}
+
