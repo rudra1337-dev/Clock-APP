@@ -1,173 +1,182 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-
-
-
-#inSw{
-  display: flex;
-    justify-content: center;
-  align-items: center;
-    height: 23vh;
-  width: 100vw;
-    /*background-color: azure;*/
-  font-size: 15vw;
-}
-
-
-.swIn{
-  width: 25vw;
-  text-align: center;
-  font-size: 20vw;
-  border-radius: 30%;
-  background-color: #1C1C1C;
-  color: #FFD700;
-  border: 2px dotted #FFD700;
-}
-
-
-
-
-
-#swAdd{
-  background-color: lightskyblue;
-  height: 15vw;
-  width: 15vw;
-  border: none;
-  border-radius: 50%;
-  z-index: 2;
-  font-size: 6vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-
-.playFunc{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 10vh;
-  width: 80VW;
-  border-radius: 10%;
-  border: 1px solid wheat;
-  
-}
-
-.swFunctions button{
-  background-color: #1C1C1C;
-  color: #FFD700;
-  
-  height: 12vw;
-  width: 12vw;
-  border: 1px solid #FFD700;
-  border-radius: 50%;
-  font-size: 4vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#swCross{
-  /*color: red;*/
-  /*border-color: red;*/
-}
-
-#swFunctions{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 10vh;
-  width: 80VW;
-  border-radius: 10%;
-  
-  position: fixed;
-  bottom: 14vh;
-  left: 9.5vw;
-  z-index: 2;
-}
-
-#swReset, #swMark{
-  height: 15vw;
-  width: 15vw;
-  border: none;
-  border-radius: 50%;
-  font-size: 7vw;
-   color: darkgray;
-  background-color: #1C1C1C;
-  display: none;
-}
-
-
-
-
-
-
-
-
-/*-----------__----------------_-------------*/
-
-
-
-
-.stLables{
-  /*background-color: lightpink;*/
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 7vh;
-  width: 95vw;
-  
-  display: none;
-}
-#dynamicUpdate{
+#stopwS {
+  width: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 51vh;
-  width: 100vw;
-  /*background-color: lightblue;*/
+  justify-content: flex-start;
+  gap: clamp(1rem, 3vw, 2rem);
+  padding: clamp(0.5rem, 2vw, 1rem) 0;
 }
 
-
-.stLableTime{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-items: ;
-  height: 6vh;
-  width: 20vw;
-    
-  /*background-color: red;*/
-}
-
-.stDifferTime{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-items: ;
-  height: 6vh;
-  width: 20vw;
-  
-    
-  /*background-color: blue;*/
-}
-
-
-.stSlNo{
-  /*background-color: aquamarine;*/
+#inSw {
+  width: min(100%, 42rem);
+  min-height: clamp(8rem, 24vh, 11rem);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 7vh;
-  width: 15vw;
+  gap: clamp(0.4rem, 2vw, 1rem);
+  font-size: clamp(1.8rem, 8vw, 4rem);
 }
 
-.stSlNo i{
-  font-size: 5vh;
+.swIn {
+  width: clamp(4.75rem, 19vw, 7rem);
+  min-height: clamp(4.75rem, 19vw, 7rem);
+  padding: 0.5rem;
+  text-align: center;
+  font-size: clamp(1.8rem, 9vw, 4.5rem);
+  border-radius: 1.25rem;
+  background-color: #1c1c1c;
+  color: #ffd700;
+  border: 2px dotted #ffd700;
 }
 
+#stDynamicUpdate {
+  width: min(100%, 48rem);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0 0.25rem calc(clamp(4.5rem, 12vw, 5.5rem) + 1.5rem);
+}
+
+.stLables {
+  width: 100%;
+  min-height: clamp(3.75rem, 8vh, 4.75rem);
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 clamp(0.6rem, 2vw, 1rem);
+  border: 1px solid rgba(255, 215, 0, 0.18);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+}
+
+.stSlNo {
+  width: clamp(2rem, 8vw, 3rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.stSlNo i {
+  font-size: clamp(1rem, 4vw, 1.75rem);
+}
+
+.stDifferTime,
+.stLableTime {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+  min-width: 0;
+  flex: 1 1 0;
+}
+
+.stDifferTime h1,
+.stLableTime h1 {
+  margin: 0;
+  font-size: clamp(1rem, 3.8vw, 1.6rem);
+}
+
+#swFunctions {
+  position: fixed;
+  left: 50%;
+  bottom: calc(var(--footer-height) + 0.75rem);
+  transform: translateX(-50%);
+  width: min(calc(100vw - 2rem), 28rem);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-items: center;
+  align-items: center;
+  gap: clamp(0.75rem, 3vw, 1rem);
+  z-index: 6;
+}
+
+#swFunctions button {
+  width: clamp(3.75rem, 13vw, 5rem);
+  height: clamp(3.75rem, 13vw, 5rem);
+  border-radius: 50%;
+  font-size: clamp(1.2rem, 4vw, 2rem);
+}
+
+#swAdd {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightskyblue;
+  border: none;
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+#swReset,
+#swMark {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: darkgray;
+  background-color: #1c1c1c;
+  border: 1px solid rgba(255, 215, 0, 0.25);
+}
+
+#swReset {
+  grid-column: 1;
+}
+
+#swMark {
+  grid-column: 3;
+}
+
+#fixedLable {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: rgba(28, 28, 28, 0.96);
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 420px) {
+  .swIn {
+    width: clamp(4rem, 22vw, 5rem);
+    min-height: clamp(4rem, 22vw, 5rem);
+    font-size: clamp(1.5rem, 8vw, 2.4rem);
+  }
+
+  .stDifferTime h1,
+  .stLableTime h1 {
+    font-size: 0.92rem;
+  }
+
+  .stLables {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.35rem 0.75rem;
+    padding: 0.75rem;
+  }
+
+  .stSlNo {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .stDifferTime,
+  .stLableTime {
+    flex: 1 1 calc(50% - 0.5rem);
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 900px) {
+  #stopwS {
+    max-width: min(100%, 48rem);
+    margin: 0 auto;
+  }
+}

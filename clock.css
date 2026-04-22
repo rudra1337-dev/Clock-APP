@@ -1,37 +1,86 @@
-*{
- margin: 0;
- padding: 0;
+#clockS {
+  width: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: center;
+  padding: clamp(0.5rem, 2vw, 1rem) 0;
 }
 
-
-
-#clockS{
- 
-}
-
-.clock-section{
-  height: 37vh;
-  width: 100vw;
-}
-
-#time pre{
-  display: flex;
-  font-size: 12vw;
-}
-#date-details pre{
-  display: flex;
-  font-size: 5vw;
-  line-height: 10vh;
-}
-
-#region{
-  font-size: 5vw;
-}
-
-.clock-section{
+.clock-section {
+  width: 100%;
+  min-height: clamp(16rem, 56vh, 32rem);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  align-content: space-around;
+  align-items: center;
+  gap: clamp(0.75rem, 2.5vw, 1.5rem);
+  padding: clamp(1rem, 4vw, 2.5rem);
+  border: 1px solid rgba(255, 215, 0, 0.18);
+  border-radius: clamp(1rem, 3vw, 2rem);
+  background: linear-gradient(145deg, rgba(255, 215, 0, 0.08), rgba(135, 206, 250, 0.05));
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.18);
+}
+
+.clock-section:empty {
+  display: none;
+}
+
+#time,
+#region,
+#date-details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#time pre,
+#date-details pre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.2rem, 1.2vw, 0.75rem);
+}
+
+#time pre {
+  font-size: clamp(3rem, 14vw, 8rem);
+  line-height: 0.95;
+}
+
+#date-details pre {
+  font-size: clamp(1.1rem, 4vw, 2rem);
+  line-height: 1.1;
+  flex-wrap: wrap;
+}
+
+#time h1,
+#date-details h3,
+#region h2 {
+  margin: 0;
+  font-weight: 700;
+}
+
+#region {
+  font-size: clamp(1rem, 3vw, 1.75rem);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 420px) {
+  #time pre {
+    font-size: clamp(2.5rem, 13vw, 3.8rem);
+  }
+}
+
+@media (min-width: 900px) {
+  #clockS {
+    max-width: min(100%, 72rem);
+    margin: 0 auto;
+  }
+
+  .clock-section {
+    min-height: clamp(20rem, 62vh, 40rem);
+  }
 }
